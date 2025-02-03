@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boolean Identities and Laws</title>
+    <meta charset="utf-8">
+    <style>
+        body{
+            background-color: rgb(193, 185, 185);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+        p{
+            font-size: 14pt;
+            text-align: left;
+            width: 80%;
+            margin: 4px;
+        }
+        table {
+            
+            width:80%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid blAck;
+            pAdding: 8px;
+            text-Align: left;
+            font-size:20pt;
+        }
+        th {
+            bAckground-color: #f2f2f2;
+        }
+        .not {
+           text-decoration: overline;
+           text-underline-offset: 2pt;
+        }
+        .doublenot{
+            border-top: 2px solid black;
+            display: inline-block;
+            padding: 4px 0 0 0;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Boolean Identities and Laws</h1>
+    <p>The symbols used are + for OR, · for AND and a <span class="not">bar</span> for NOT. 
+        Other exam boards may use V for OR, ^ for AND and ¬ for NOT</p>
+    <p>The order of precedence in Boolean Algebra is Brackets > AND > OR</p>
+    <p> You can sort of treat AND operations as multiplication and OR operations as addition</p>
+    <table>
+        <tr>
+            <th width="25%">Name</th>
+            <th>Identity</th>
+        </tr>
+        <tr>
+            <td>Identity Law</td>
+            <td>A + 0 = A<br>A · 1 = A</td>
+        </tr>
+        <tr>
+            <td>Identity (Domination) Law</td>
+            <td>A + 1 = 1<br>A · 0 = 0</td>
+        </tr>
+        <tr>
+            <td>Idempotent Law</td>
+            <td>A + A = A<br>A · A = A</td>
+        </tr>
+        <tr>
+            <td>Complement Law</td>
+            <td>A + <span class="not">A</span> = 1<br>A · <span class="not">A</span> = 0</td>
+        </tr>
+        <tr>
+            <td>Double Negation Law</td>
+            <td><span class="doublenot"><span class="not">A</span></span> = A</td>
+        </tr>
+        <tr>
+            <td>Commutative Law</td>
+            <td>A + B = B + A<br>A · B = B · A</td>
+        </tr>
+        <tr>
+            <td>Associative Law</td>
+            <td>(A + B) + C = A + (B + C)<br> (A · B) · C = A · (B · C)</td>
+        </tr>
+        <tr>
+            <td>Distributive Law</td>
+            <td>A · (B + C) = (A · B) + (A · C)<br>A + (B · C) = (A + B) · (A + C)</td>
+        </tr>
+        <tr>
+            <td>Absorption Law</td>
+            <td>A + (A · B) = A<br>A · (A + B) = A</td>
+        </tr>
+        <tr>
+            <td>De Morgan’s Theorems</td>
+            <td>(A · B)<span class="not"></span> = <span class="not">A</span> + <span class="not">B</span><br>
+                (A + B)<span class="not"></span> = <span class="not">A</span> · <span class="not">B</span></td>
+        </tr>
+        <tr>
+            <td>Redundancy Laws (Consensus Theorem)</td>
+            <td>A + (<span class="not">A</span> · B) = A + B<br>A · (<span class="not">A</span> + B) = A · B</td>
+        </tr>
+    </table>
+</body>
+</html>

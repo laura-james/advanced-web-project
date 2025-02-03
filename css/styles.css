@@ -86,8 +86,7 @@ nav a.active {
         margin: 0px 0;
     }
     nav a.logolink{
-        align-self:inherit; 
-        
+        align-self:inherit;         
     }
     nav a.logolink img{
         height:40px;
